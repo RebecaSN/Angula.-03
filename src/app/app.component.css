@@ -1,0 +1,23 @@
+
+h1{
+    font-size: 50px;
+}
+button{
+    margin-top: 100px;
+
+}
+.Containder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+strong{
+    font-size: 80px;
+}
+.example-button-container{
+    display: flex;
+    
+   
+}

@@ -1,0 +1,71 @@
+<!--<div>-->
+  <!-- <input [type]="tipoDoInput" placeholder="digite algo"><!--O angula vai interpretar isso aqui, vai pegar o vlor da minha componente 'TipoDoInpu'. Coloquei dentro de um atributo do html, --><!--pega um valor da propriedade e adiciona no atributo-->
+ 
+ <!-- <p>O titulo do projeto é:{{title}} {{ numero}}</p><!--interpolando os dados para ele aparecer na tela. Mostra na tela o que está dentro da classe. Colocamos dentro da prorpiedade o nome da class--><!--abre colchetes, bota o atributo, abre e cha aspas e passa dentro qualquer coisa em js que a gente quiser, no caso eu to passando uma variavel do meu componente chamada 'tipoDInput', to passando como valor da propriedade type uma string, js do tipo passworld. Dentro das aspas passa um valor buoleano-->
+ <!-- <form class="example-form">-->
+   <!-- <mat-form-field>-->
+    <!--  <mat-label>Digite o seu nome</mat-label>-->
+     <!-- <input matInput placeholder="Ana Carolina"[value]='valorInput'(input)="alterarValor($event)"><!--$event: variavel global que pega os dados do evento.Toda vez que o usuario escrever algo no formulário, vai ocorrer esse evento. o valor da propriedade 'valor input' vai ser colocado dentro do atributo value do html. O input está ligada a propriedade value. O conudo das variaveis são somente para a leitura, portanto não se pode alterar, somete mostrar
+     <!-- isso diminui a quantidade de coisas que a gente pode fazer na aplicação. Para resolver isso aplicamos o conceido toWay database, dai a partir disso o usuario pode além de ler, alterar o meu value. é uma teoria que para por em pratica, podemos fazer de n-maneiras. uma das maneras que podemos fazer isso -->
+   <!-- </mat-form-field>-->
+  <!--</form>-->
+  <!--<p>{{mensagem}}</p>-->
+  <!--<p>{{valorInput}}</p>-->
+  <!--<button (click)="mostrarSnackBar()"> Clique em mim, e verá uma mensagem muito legal ;)</button><!--Vamos ouvir o evento de click nesse botão-->
+  <!--Dentro das aspas eu passo uma função que eu criei no app.component.ts-->
+<!--</div> -->
+<!--To way tadabind: se a gente quer que o usuario consiga alterar s valores dessas propriedade, tipo input: formulario,a gente quer que esses valores fiquem guardados em formulários-->
+
+<!--Pode se fazer expressões javascript normal aqui dentro da interpolação, posso colocar uma string direto também. Mas o que se geralmente faz é mostrar valores da prorpriedade na tela . Normalmente utilizamos para oistrar dados divagaveis para o usuario-->
+<!--Valores em string tem a propriedade 'lengh', da para mostrar isso também. Aceota dentro das chaves qualquer expressão JS . Posso executar metodos aqui também//-->
+
+<!--Databinding: primeira parte é a interpolação de dados dentro do html, pega um valor de uma proriedade de um componente, e colocar na tela, para o uduario ver. 
+Dentro do app.componente.ts, tem uma propriedade chamada 'title' que é o titulo do projeto que demos. Queremos que ela aparaeça na tela, usano a parte de interpolação dos dados no html
+ Mostra a variavel na tela. POdemos ter mais de uma interpolação de dados dentro do mesmo elemento-->
+ <!--Primeiro tipo de databinding é mostrar na tela do usuario-->
+<!--Não precisa colocar head, bod etc. já que essa base ja se econtra o arquivo 'index.html'-->
+<!--Propite bind: dentro de atributos do html, a gente pode colocar valores de variaveis que a gente tem dentro do nosso componente. Eu posso dentro do type de um input seja um pouco mais dinamico-->
+<!--O angula tem uma propria estrutura para ouvir eventos -->
+
+<!--<div class="wrapper">
+  <mat-form-field appearance="fill">
+    <mat-label>Digite seu nome</mat-label>
+    <input type="text" matInput placeholder="Seu nome aqui"[(ngMode)]="content" name="">. Aqui eu estou vinculando a minha variavel content ao meu input do tipo texto, de uma amenria mais automatica, sem precisar ouvir uma função.
+    com o ng model, a gente diz que a variavel está ligada a algum input do meu codigo. Tudo que eu colocar dentro do input, vai ser transferido para a minha variavel content
+  </mat-form-field>
+  <p>{{content}}</p>
+</div>
+toda vez que a gente utiliza 'ng model' é obrigatorio usar o atributo 'name' no input
+maneira de fazer mais facil de databind-->
+<!--<div class=" wrapper">-->
+ <!-- <app-input> label='Qualquer outra coisa' </app-input>--><!--Toda vez que eu coloco uma propriedade. Quando a gente coloca esse decorator (@input) em cima de uma propriedade, eu to informando ao angula que essa propriedade consegue receber valores externos agora. 
+  quando eu faço isso, o angula entende quando eu faço isso, o @input() vira uma especie de atributo html. Posso passar um novo valor, que agora nao mostra mais o valor anterior, de maneira externa as propriedades-->
+<!--</div>--><!--Só existe porque existe uma variavel chamada: label dentro de uma variavel-->
+
+
+
+
+
+<div class="Containder"> 
+  <h1>
+    Exercicio 0.3 - Angular
+  </h1>
+   <div class="example-button-container">
+    <button (click)="Somar_um (ValorDei)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+      <mat-icon> +</mat-icon>
+    </button>
+    
+    <strong>{{ValorDei}}</strong>
+  
+    <div class="example-button-container">
+      <button (click)="Dimunuir_um (ValorDei)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+        <mat-icon> -</mat-icon>
+      </button>
+ </div>
+
+
+
+
+
+
+
